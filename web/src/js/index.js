@@ -17,5 +17,19 @@ angular.module("app", ['ui.router'])
 	        templateUrl: "/html/index.html",
 	        controller: "homeController"
         })
+        .state('gusev', {
+          url:'/gusev/',
+          templateUrl: "/html/gusev.html",
+          controller: "gusevController"
+        })
+        .state('gusev.calc', {
+          url:'calc/',
+          templateUrl: "/html/gusev_calc.html",
+        })
+        .state('ilyzshuk', {
+          url:'/ilyzshuk/',
+          templateUrl: "/html/ilyzshuk.html",
+          controller: "ilyzshukController"
+        })
 	  }
 	])
