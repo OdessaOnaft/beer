@@ -4,7 +4,7 @@ angular.module("app", ['ui.router'])
 	}])
 	.config(['$locationProvider', '$stateProvider', '$urlRouterProvider',
 	  ($locationProvider, $stateProvider, $urlRouterProvider) =>{
-	    $locationProvider.html5Mode(true) 
+	    $locationProvider.html5Mode(true)
 	    $urlRouterProvider.when('','/')
 	    $urlRouterProvider.otherwise("/404/");
 	    $stateProvider
@@ -38,7 +38,16 @@ angular.module("app", ['ui.router'])
         })
         .state('iliev.calc', {
           url:'calc/',
-          templateUrl: "/html/iliev_calc.html",
+          templateUrl: "/html/iliev_calc.html"
+        })
+         .state('danilyuk', {
+          url:'/danilyuk/',
+          templateUrl: "/html/danilyuk.html",
+          controller: "danilyukController"
+        })
+         .state('danilyuk.calc', {
+          url:'calc/',
+          templateUrl: "/html/danilyuk_calc.html",
         })
 	  }
 	])

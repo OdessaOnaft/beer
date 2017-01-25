@@ -1,0 +1,51 @@
+<button ui-sref='.^'>Назад</button>
+<div class="calc">
+    <div class="top">
+        <input type="text" ng-model="obj.expression" disabled>
+        <button class="equals" ng-click="calc()">=</button>
+        <button ng-click="deleteLast()">C</button>
+        <button ng-click="deleteAll()">Delete</button>
+    </div>
+    <!-- <p>{{obj.res}}</p> -->
+    <button ng-click="obj.expression=obj.expression+'1'">1</button>
+    <button ng-click="obj.expression=obj.expression+'2'">2</button>
+    <button ng-click="obj.expression=obj.expression+'3'">3</button>
+    <p>
+        <button ng-click="obj.expression=obj.expression+'4'">4</button>
+        <button ng-click="obj.expression=obj.expression+'5'">5</button>
+        <button ng-click="obj.expression=obj.expression+'6'">6</button>
+    </p>
+    <p>
+        <button ng-click="obj.expression=obj.expression+'7'">7</button>
+        <button ng-click="obj.expression=obj.expression+'8'">8</button>
+        <button ng-click="obj.expression=obj.expression+'9'">9</button>
+    </p>
+    <p>
+        <button ng-click="obj.expression=obj.expression+'+'">+</button>
+        <button ng-click="obj.expression=obj.expression+'-'">-</button>
+        <button ng-click="obj.expression=obj.expression+'*'">*</button>
+        <button ng-click="obj.expression=obj.expression+'/'">/</button>
+    </p>
+    <p>
+    </p>
+</div>
+<style>
+.task-wrapper {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.calc {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.top {
+    position: relative;
+    left: 50px;
+}
+
+.equals {
+    background-color: orange;
+}
+</style>

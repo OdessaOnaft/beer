@@ -1,20 +1,38 @@
-<button ui-sref='.^'>Назад</button>
-<input type="text" ng-model="obj.expression" disabled>
+<div class="calc_wrapper">
+	<img class="back" src="assets/gusev_img/Left_arrow.png" ui-sref='.^'>
+	<input type="text" ng-model="obj.expression" disabled>
+	<div class="numbers">
+		<button ng-click="obj.expression=obj.expression+'1'">1</button>
+		<button ng-click="obj.expression=obj.expression+'2'">2</button>
+		<button ng-click="obj.expression=obj.expression+'3'">3</button>
+		<button ng-click="obj.expression=obj.expression+'4'">4</button>
+		<button ng-click="obj.expression=obj.expression+'5'">5</button>
+		<button ng-click="obj.expression=obj.expression+'6'">6</button>
+		<button ng-click="obj.expression=obj.expression+'7'">7</button>
+		<button ng-click="obj.expression=obj.expression+'8'">8</button>
+		<button ng-click="obj.expression=obj.expression+'9'">9</button>
+		<button ng-click="obj.expression=obj.expression+'0'">0</button>
+		<button ng-click="obj.expression=obj.expression+'.'">.</button>
+		<button ng-click="calc()">=</button>
+	</div>
+	<div class="calc_math">
+		<button ng-click="obj.expression=obj.expression+'+'">+</button>
+		<button ng-click="obj.expression=obj.expression+'-'">-</button>
+		<button ng-click="obj.expression=obj.expression+'*'">*</button>
+		<button ng-click="obj.expression=obj.expression+'('">(</button>
+		<button ng-click="obj.expression=obj.expression+')'">)</button>
+		<button ng-click="obj.expression=obj.expression+'/'">/</button>
+		<div class="edit_power">
+			<input type="number" ng-model="obj.number" placeholder="Число в степени">
+			<input type="number" ng-model="obj.power" placeholder="Степень числа">
+		</div>
+		<button ng-click="obj.expression=obj.expression+'Math.sqrt'+'('+obj.number+','+obj.power+')'">&#8730;</button>
+		<button ng-click="obj.expression=obj.expression+'Math.pow'+'('+obj.number+','+obj.power+')'">^</button>
+		<button ng-click="obj.expression=obj.expression+'%'">%</button>
+		<button ng-click="obj.expression=''">Очистить</button>
+	</div>
+</div>
 
-<button ng-click="calc()">посчитать</button>
+
 
 <!-- <p>{{obj.res}}</p> -->
-
-<button ng-click="obj.expression=obj.expression+'1'">1</button>
-<button ng-click="obj.expression=obj.expression+'2'">2</button>
-<button ng-click="obj.expression=obj.expression+'3'">3</button>
-<button ng-click="obj.expression=obj.expression+'4'">4</button>
-<button ng-click="obj.expression=obj.expression+'5'">5</button>
-<button ng-click="obj.expression=obj.expression+'6'">6</button>
-<button ng-click="obj.expression=obj.expression+'7'">7</button>
-<button ng-click="obj.expression=obj.expression+'8'">8</button>
-<button ng-click="obj.expression=obj.expression+'9'">9</button>
-<button ng-click="obj.expression=obj.expression+'+'">+</button>
-
-
-
