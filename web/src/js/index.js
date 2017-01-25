@@ -31,5 +31,14 @@ angular.module("app", ['ui.router'])
           templateUrl: "/html/ilyzshuk.html",
           controller: "ilyzshukController"
         })
+        .state('iliev', {
+          url:'/iliev/',
+          templateUrl: "/html/iliev.html",
+          controller: "ilievController"
+        })
+        .state('iliev.calc', {
+          url:'calc/',
+          templateUrl: "/html/iliev_calc.html",
+        })
 	  }
 	])
