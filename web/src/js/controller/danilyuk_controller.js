@@ -1,11 +1,13 @@
 angular.module("app")
   .controller("danilyukController", ($scope, $rootScope, $state, $translate)=>{
-    $scope.obj = {}
+    $scope.obj = {
+        expression: ''
+    }
     $scope.state = $state
     console.log($state.current.name)
     $scope.calc = ()=>{
         $scope.obj.res=eval($scope.obj.expression)
-        $scope.obj.expression = $scope.obj.res
+        $scope.obj.expression = ($scope.obj.res || '')+'';
     };
     $scope.deleteLast = ()=>{
         $scope.obj.expression = $scope.obj.expression.slice(0, -1);

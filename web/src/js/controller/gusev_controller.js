@@ -1,8 +1,8 @@
 angular.module("app")
-  .controller("gusevController", ($scope, $rootScope, $state, $translate)=>{
+  .controller("gusevController", ($scope, $rootScope, $state, $translate, $timeout, $meow)=>{
     $scope.obj = {}
+    $meow.meow(5)
     $scope.state = $state
-    console.log($state.current.name)
     $scope.calc = ()=>{
     	$scope.obj.res=eval($scope.obj.expression)
     	$scope.obj.expression = $scope.obj.res
@@ -15,5 +15,11 @@ angular.module("app")
 	    },
         setHeight: 200,
         scrollInertia: 0
-	}
+    }
+    $timeout(()=>{
+        $scope.obj.val = 5
+    }, 1000)
+
+
+    
   })

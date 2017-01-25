@@ -1,6 +1,7 @@
-<div class="calc_wrapper">
+<div class="calc_wrapper" backspace="obj.expression">
+{{obj.val}}
 	<img class="back" src="assets/gusev_img/Left_arrow.png" ui-sref='.^'>
-	<input type="text" ng-model="obj.expression" disabled>
+	<input type="text" ng-model="obj.expression" enter="calc">
 	<div class="numbers">
 		<button ng-click="obj.expression=obj.expression+'1'">1</button>
 		<button ng-click="obj.expression=obj.expression+'2'">2</button>
@@ -29,8 +30,9 @@
 		<button ng-click="obj.expression=obj.expression+'Math.sqrt'+'('+obj.number+','+obj.power+')'">&#8730;</button>
 		<button ng-click="obj.expression=obj.expression+'Math.pow'+'('+obj.number+','+obj.power+')'">^</button>
 		<button ng-click="obj.expression=obj.expression+'%'">%</button>
-		<button ng-click="obj.expression=''">Очистить</button>
+		<button ng-click="obj.expression=''" crazy>Очистить</button>
 	</div>
+	<div style="clear: both"></div>
 </div>
 
 
