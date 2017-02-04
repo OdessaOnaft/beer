@@ -49,5 +49,10 @@ angular.module("app", ['ui.router'])
           url:'calc/',
           templateUrl: "/html/danilyuk_calc.html",
         })
+         .state('sansey', {
+          url:'/sansey/',
+          templateUrl: "/html/sansey.html",
+          controller: "sanseyController"
+        })
 	  }
 	])
