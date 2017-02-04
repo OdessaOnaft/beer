@@ -1,4 +1,4 @@
-angular.module("app", ['ui.router'])
+angular.module("app", ['ui.router', 'ngTouch'])
 	.run(['$state', '$rootScope',  ($state, $rootScope )=>{
 
 	}])
