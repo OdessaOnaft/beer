@@ -34,10 +34,12 @@ angular.module("app")
 	  	// 		"text-align": "center",
 	  	// 		"z-index": 345435,
 	  	// 		top: $(element).offset().top+"px",
-	  	// 		left: $(element).offset().left+"px"
+	  	// 		left: $(element).offset().left+"px",
+
 	  	// 	});
 	  	// 	$(mock).animate({
 	  	// 		"font-size": 250,
+
 	  	// 		opacity: 0,	  		},
 	  	// 	animationTime)
 

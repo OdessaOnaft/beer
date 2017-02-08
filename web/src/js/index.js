@@ -26,6 +26,11 @@ angular.module("app", ['ui.router'])
           url:'calc/',
           templateUrl: "/html/gusev_calc.html",
         })
+        .state('gusev.swipe', {
+          url:'swipe/',
+          templateUrl: "/html/gusev_swipe.html",
+          controller: "gusevController"
+        })
         .state('ilyzshuk', {
           url:'/ilyzshuk/',
           templateUrl: "/html/ilyzshuk.html",
