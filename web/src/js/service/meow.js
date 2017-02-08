@@ -6,7 +6,7 @@ angular.module("app")
   			var str="meow"
   			var res=""
   			for(var i=0;i<times;i++)res+=str+ " "
-  			console.log(res+`!!!!`)
+  			console.log(`${res}!!!!`)
   		}
   	}
 

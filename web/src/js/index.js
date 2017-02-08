@@ -40,6 +40,10 @@ angular.module("app", ['ui.router'])
           url:'calc/',
           templateUrl: "/html/iliev_calc.html"
         })
+        .state('iliev.menu', {
+          url:'menu/',
+          templateUrl: "/html/iliev_additional_menu.html"
+        })
          .state('danilyuk', {
           url:'/danilyuk/',
           templateUrl: "/html/danilyuk.html",

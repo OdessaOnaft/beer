@@ -1,7 +1,8 @@
 angular.module("app")
 	.directive('enter', ()=>{
 	  return (scope, element, attrs)=> {
-	  	$(element).keydown((e)=>{
+	$(element).keydown((e)=>{
+	  		console.log(e.which)
 	  		if(e.which == 13) {
 	  			
 	  			scope.$apply(()=>{
@@ -12,5 +13,7 @@ angular.module("app")
   	  		}
 
 	  	})
+
+
 	  }
 	})

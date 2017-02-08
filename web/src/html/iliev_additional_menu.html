@@ -1,0 +1,23 @@
+<!-- <div class="wrapper-calc" additional-menu>
+	<div>
+		<button ui-sref='.^' class="i-button margin-top">Назад</button>
+
+		
+	</div>
+</div>
+
+
+
+ -->
+ <div additional>
+ <div id="menu" ng-model="line.menu"><ol></ol></div>
+	 <div class="wrapper-calc">
+		 <input type="text" ng-model="line.menu" placeholder="Введите пункт меню">
+		 <button class="i-button" ng-click="addLine()" ng-disabled="!line.menu">Add</button>
+		<button class="i-button" ng-click="removeLine()">Remove</button>
+
+		 <button ui-sref='.^' class="i-button">Назад</button>
+
+	</div>
+</div>
+

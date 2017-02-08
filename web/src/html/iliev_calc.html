@@ -1,4 +1,4 @@
-<div class="wrapper-calc" backspace="obj.expression">
+<div class="wrapper-calc" backspace="obj.expression" enter="calc">
 
 
 	<div class="my-flex-container">
@@ -7,7 +7,7 @@
 			<div class="can-toggle demo-rebrand-1">
 				 <input id="d" type="checkbox">
 				 <label for="d">
-					 <div class="can-toggle__switch" data-unchecked="цифр" data-checked="строк"></div>
+					 <div class="can-toggle__switch" data-unchecked="выкл" data-checked="вкл"></div>
 					 <div class="can-toggle__label-text"></div>
 				 </label>
 			</div>
@@ -15,13 +15,13 @@
 		<div><button ui-sref='.^' class="i-button margin-top">Назад</button></div>
 	</div>
 
-<div class="i-calc">
+<div class="i-calc" disabled>
 	<div class="textbox">
 		<input type="text" ng-model="obj.expression" disabled class="textbox-input">
 	</div>
 	<div class="my-flex-container">
 		<div class="numbers">
-			<button class="grey" ng-click="obj.expression=obj.expression+'('">(</button>
+			<button class="test-color" ng-click="obj.expression=obj.expression+'('">(</button>
 			<button class="grey" ng-click="obj.expression=obj.expression+')'">)</button>
 			<button class="grey" ng-click="obj.expression=obj.expression+'%'">%</button>
 			<button class="grey" ng-click="obj.expression=''">CE</button>
@@ -42,10 +42,17 @@
 			<button ng-click="calc()" class="equally">=</button>
 			<button class="grey" ng-click="obj.expression=obj.expression+'+'">+</button>
 		</div>
-
-
-
-		<div class="operation">asdas</div>
+		<div class="operation">
+			<button class="grey" ng-click="obj.expression=obj.expression+'?'">π</button>
+			<button class="grey" ng-click="obj.expression=obj.expression+'?'">cos</button>
+			<button class="grey" ng-click="obj.expression=obj.expression+'?'">sin</button>
+			<button class="grey" ng-click="obj.expression=obj.expression+'?'">tan</button>
+			<button class="grey" ng-click="obj.expression=obj.expression+'?'">ln</button>
+			<button class="grey" ng-click="obj.expression=obj.expression+'?'">^</button>
+			<button class="grey" ng-click="obj.expression=obj.expression+'?'">√</button>
+			<button class="grey" ng-click="obj.expression=obj.expression+'?'">log</button>
+			<button class="grey" ng-click="obj.expression=obj.expression+'?'">e</button>
+		</div>
 	</div>
 </div>
 

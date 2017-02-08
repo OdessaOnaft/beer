@@ -16,4 +16,14 @@ angular.module("app")
         setHeight: 200,
         scrollInertia: 0
 	}
+    $scope.lines = {}
+
+    $scope.addLine = function(){
+          $("#menu").append("<li><a>" +$scope.line+"</a></li>")
+          console.log("add")
+        }
+    $scope.removeLine = ()=>{
+
+    }
+
   })
