@@ -2,8 +2,10 @@ angular.module("app", ['ui.router', 'ngTouch'])
 	.run(['$state', '$rootScope',  ($state, $rootScope )=>{
 
 	}])
-	.config(['$locationProvider', '$stateProvider', '$urlRouterProvider',
-	  ($locationProvider, $stateProvider, $urlRouterProvider) =>{
+	.config(['$locationProvider', '$stateProvider', '$urlRouterProvider','$httpProvider',
+	  ($locationProvider, $stateProvider, $urlRouterProvider, $httpProvider) =>{
+
+      delete $httpProvider.defaults.headers.common['X-Requested-With'];
 	    $locationProvider.html5Mode(true)
 	    $urlRouterProvider.when('','/')
 	    $urlRouterProvider.otherwise("/404/");

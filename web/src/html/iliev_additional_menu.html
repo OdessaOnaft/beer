@@ -10,7 +10,11 @@
 
  -->
  <div additional>
- <div id="menu" ng-model="line.menu"><ol></ol></div>
+ <div id="menu" ng-model="line.menu">
+	 <ul>
+	 	<li ng-repeat="line in lines"><a>{{line}}</a></li>
+	 </ul>
+ </div>
 	 <div class="wrapper-calc">
 		 <input type="text" ng-model="line.menu" placeholder="Введите пункт меню">
 		 <button class="i-button" ng-click="addLine()" ng-disabled="!line.menu">Add</button>
