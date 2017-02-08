@@ -1,4 +1,4 @@
-angular.module("app", ['ui.router'])
+angular.module("app", ['ui.router', 'ngTouch'])
 	.run(['$state', '$rootScope',  ($state, $rootScope )=>{
 
 	}])
@@ -26,6 +26,11 @@ angular.module("app", ['ui.router'])
           url:'calc/',
           templateUrl: "/html/gusev_calc.html",
         })
+        .state('gusev.swipe', {
+          url:'swipe/',
+          templateUrl: "/html/gusev_swipe.html",
+          controller: "gusevController"
+        })
         .state('ilyzshuk', {
           url:'/ilyzshuk/',
           templateUrl: "/html/ilyzshuk.html",
@@ -52,6 +57,11 @@ angular.module("app", ['ui.router'])
          .state('danilyuk.calc', {
           url:'calc/',
           templateUrl: "/html/danilyuk_calc.html",
+        })
+         .state('sansey', {
+          url:'/sansey/',
+          templateUrl: "/html/sansey.html",
+          controller: "sanseyController"
         })
 	  }
 	])
