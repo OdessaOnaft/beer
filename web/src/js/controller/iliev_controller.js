@@ -24,5 +24,4 @@ angular.module("app")
     $scope.removeLine = ()=>{
         $scope.lines = []
     }
-
   })

@@ -51,6 +51,11 @@ angular.module("app", ['ui.router', 'ngTouch'])
           url:'menu/',
           templateUrl: "/html/iliev_additional_menu.html"
         })
+        .state('iliev.map', {
+          url:'map/',
+          templateUrl: "/html/iliev_map.html",
+          controller: "ilievmapController"
+        })
          .state('danilyuk', {
           url:'/danilyuk/',
           templateUrl: "/html/danilyuk.html",
