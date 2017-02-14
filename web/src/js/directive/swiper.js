@@ -12,6 +12,7 @@ angular.module("app")
 			
   			$(element).css({
   				"position": "relative",
+          "cursor": "pointer",
   				"display": "block",
   				"left" : posX - 50+"px"
   				

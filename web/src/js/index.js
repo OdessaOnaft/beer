@@ -33,6 +33,16 @@ angular.module("app", ['ui.router', 'ngTouch'])
           templateUrl: "/html/gusev_swipe.html",
           controller: "gusevController"
         })
+        .state('gusev.map', {
+          url:'map/',
+          templateUrl: "/html/gusev_map.html",
+          controller: "gusevMapController"
+        })
+        .state('gusev.parser', {
+          url:'parser/',
+          templateUrl: "/html/gusev_parser.html",
+          controller: "gusevParser"
+        })
         .state('ilyzshuk', {
           url:'/ilyzshuk/',
           templateUrl: "/html/ilyzshuk.html",
