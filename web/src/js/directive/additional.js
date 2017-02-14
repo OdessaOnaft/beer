@@ -26,14 +26,15 @@ angular.module("app")
       $(element).on('mouseup', (e)=>{
         // console.log('mouseup')
         $timeout.cancel(timer)
-        $("#menu").css({
-                  display: 'none'
-                })
+        // $("#menu").css({
+        //           display: 'none'
+        //         })
 
       })
-
-
-
-
-  }
+      $(".close-menu").on('click', ()=>{
+         $("#menu").css({
+                  display: 'none'
+                })
+      })
+    }
 })

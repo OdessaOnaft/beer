@@ -286,6 +286,8 @@
 
 #menu {
 	display: none;
+	// cursor:pointer;
+	user-select: none;
 	li{
 		font-family: "Trebuchet MS", "Lucida Sans";
 		padding: 7px 20px;
@@ -321,5 +323,21 @@
 	}
 	li:nth-child(5):hover {
 		border-right: 10px solid #493224;
+	}
+}
+.menu2 {
+	width: 150px;
+	min-height: 50px;
+	background-color: #dddddd;
+	padding-left: 25px;
+}
+.close-menu {
+	font-size: 20px;
+	color: black;
+	cursor: pointer;
+	float: right;
+	margin-top: -25px;
+	&:hover {
+		color: green;
 	}
 }
