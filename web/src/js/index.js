@@ -33,6 +33,16 @@ angular.module("app", ['ui.router', 'ngTouch'])
           templateUrl: "/html/gusev_swipe.html",
           controller: "gusevController"
         })
+        .state('gusev.map', {
+          url:'map/',
+          templateUrl: "/html/gusev_map.html",
+          controller: "gusevMapController"
+        })
+        .state('gusev.parser', {
+          url:'parser/',
+          templateUrl: "/html/gusev_parser.html",
+          controller: "gusevParser"
+        })
         .state('ilyzshuk', {
           url:'/ilyzshuk/',
           templateUrl: "/html/ilyzshuk.html",
@@ -50,6 +60,11 @@ angular.module("app", ['ui.router', 'ngTouch'])
         .state('iliev.menu', {
           url:'menu/',
           templateUrl: "/html/iliev_additional_menu.html"
+        })
+        .state('iliev.map', {
+          url:'map/',
+          templateUrl: "/html/iliev_map.html",
+          controller: "ilievmapController"
         })
          .state('danilyuk', {
           url:'/danilyuk/',

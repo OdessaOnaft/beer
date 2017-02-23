@@ -11,7 +11,12 @@ angular.module("app")
 		 //  }
   	// }, (body,response)=>{
   	// 	console.log(body,response)
-  	// })
+  	// })\
+
+
+
+
+  	
   	$scope.data = []
   	$scope.obj = {}
   	$scope.markers = []
@@ -62,6 +67,7 @@ angular.module("app")
 		    // called asynchronously if an error occurs
 		    // or server returns response with an error status.
 		  });
+
 	var map = L.map('map-demo').setView([46.4846583, 30.732564], 13);
 
 	L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {

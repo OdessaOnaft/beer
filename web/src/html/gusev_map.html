@@ -1,0 +1,38 @@
+<img class="back" src="assets/gusev_img/Left_arrow.png" ng-swipe-disable-mouse ui-sref='.^'>
+<div class="map">
+	<!-- <input type="text" ng-model="obj.city"> -->
+	
+	{{obj.country}}
+	<select ng-model="obj.country">
+
+		<option value="Вена">Австрия</option>
+		<option value="Ереван">Армения</option>
+		<option value="Лондон">Англия</option>
+		<option value="Буэнос-Айрес">Аргентина</option>	
+		<option value="Тирана">Албания</option>	
+		<option value="Киев">Украина</option>
+		<option value="Москва">Россия</option>
+		<option value="Париж">Франция</option>
+		<option value="Рим">Италия</option>
+		<option value="Вашингтон">США</option>
+		<option value="Пекин">Китай</option>
+		<option value="Нью-Дели">Индия</option>
+		<option value="Исламабад">Пакистан</option>
+		<option value="Астана">Казахстан</option>
+		<option value="Тбилиси">Грузия</option>
+		<option value="Анкара">Турция</option>
+		<option value="Афины">Греция</option>
+		<option value="Белград">Сербия</option>
+		<option value="Загреб">Хорватия</option>
+		<option value="Берн">Швейцария</option>
+		<option value="Мадрид">Испания</option>
+		<option value="Лиссабон">Португалия</option>
+		<option value="Брюссель">Бельгия</option>
+		<option value="Амстердам">Нидерланды</option>
+		<option value="Бразилиа">Бразилия</option>		
+		<option value="Мехико">Мексика</option>
+		<option value="Токио">Япония</option>
+	</select>
+	<button ng-click="search()">Поиск</button>
+	<div id="map-demo"></div>
+</div>
