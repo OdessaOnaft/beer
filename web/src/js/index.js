@@ -60,6 +60,11 @@ angular.module("app", ['ui.router', 'ngTouch'])
           url:'calc/',
           templateUrl: "/html/danilyuk_calc.html",
         })
+         .state('danilyuk.dropdown', {
+          url:'dropdown/',
+          templateUrl: "/html/danilyuk_dropdown.html",
+
+        })
          .state('sansey', {
           url:'/sansey/',
           templateUrl: "/html/sansey.html",
