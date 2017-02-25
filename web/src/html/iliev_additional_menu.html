@@ -10,18 +10,24 @@
 
  -->
  <div additional>
- <div id="menu" ng-model="line.menu">
-	 <ul>
-	 	<li ng-repeat="line in lines"><a>{{line}}</a></li>
-	 </ul>
+	 <div id="menu" ng-model="line.menu">
+		 <div class="close-menu" >x</div>
+		 <ul>
+		 	<a href="#"><li ng-repeat="line in lines">{{line}}</li></a>
+		 </ul>
  </div>
 	 <div class="wrapper-calc">
 		 <input type="text" ng-model="line.menu" placeholder="Введите пункт меню">
 		 <button class="i-button" ng-click="addLine()" ng-disabled="!line.menu">Add</button>
-		<button class="i-button" ng-click="removeLine()">Remove</button>
-
+		 <button class="i-button" ng-click="removeLine()">Remove</button>
 		 <button ui-sref='.^' class="i-button">Назад</button>
-
+		 <div class="menu2">
+		 	Menu
+		 	<br>
+		 	<ol>
+		 	 	<li ng-repeat="line in lines">{{line}}</li>
+		 	</ol>
+		 </div>
 	</div>
 </div>
 

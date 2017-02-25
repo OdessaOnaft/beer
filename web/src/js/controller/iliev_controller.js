@@ -22,7 +22,6 @@ angular.module("app")
           $scope.lines.push($scope.line.menu)
         }
     $scope.removeLine = ()=>{
-
+        $scope.lines = []
     }
-
   })
