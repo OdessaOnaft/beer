@@ -26,7 +26,7 @@
 // 	                    .openPopup()
 // 	                )
 // 	            })
-	            
+
 // 	          }, function errorCallback(response) {
 // 	            // called asynchronously if an error occurs
 // 	            // or server returns response with an error status.
@@ -37,5 +37,5 @@
 
 // 	    L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
 // 	        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-// 	    }).addTo(map);  
+// 	    }).addTo(map);
 // 	})

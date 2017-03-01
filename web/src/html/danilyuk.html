@@ -1,6 +1,12 @@
-<div><a ui-sref=".calc" ng-if="state.is('danilyuk')">Калькулятор</a></div>
-<div><a ui-sref=".dropdown" ng-if="state.is('danilyuk')">Выпадающий список</a></div>
-
-
-
-<div ui-view class="task-wrapper"></div>
+<div class="tasks">
+    <div class="link-block">
+        <button class="d-button" ui-sref=".calc" ng-if="state.is('danilyuk')">Калькулятор</a>
+    </div>
+    <div class="link-block">
+        <button class="d-button" ui-sref=".dropdown" ng-if="state.is('danilyuk')">Выпадающий список</a>
+    </div>
+    <div class="link-block">
+        <button class="d-button" ui-sref=".map" ng-if="state.is('danilyuk')">Карта</a>
+    </div>
+</div>
+<div ui-view class="d-wrapper"></div>

@@ -1,5 +1,5 @@
 angular.module("app")
-  .controller("gusevMapController", ($scope, $rootScope, $state, $translate, $timeout, $window, $meow, $http)=>{
+  .controller("danilyukMapCtrl", ($scope, $rootScope, $state, $translate, $timeout, $window, $meow, $http)=>{
     $scope.data = []
     $scope.obj = {}
     $scope.markers = []

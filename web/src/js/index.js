@@ -80,6 +80,11 @@ angular.module("app", ['ui.router', 'ngTouch'])
           templateUrl: "/html/danilyuk_dropdown.html",
 
         })
+         .state('danilyuk.map', {
+          url:'map/',
+          templateUrl: "/html/danilyuk_map.html",
+          controller: "danilyukMapCtrl"
+        })
          .state('sansey', {
           url:'/sansey/',
           templateUrl: "/html/sansey.html",
